@@ -139,6 +139,8 @@
     <Content Include="deploy.parameters.json" />
     <Content Include="deploy.json" />
     <Content Include="README.md" />
+    <None Include="Properties\PublishProfiles\ContactDatabaseApp-1381390 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ContactDatabaseApp-1381390 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
