@@ -1,4 +1,5 @@
 using CRUD_application_2.Models;
+using System;
 using System.Linq;
 using System.Web.Mvc;
  
@@ -7,13 +8,21 @@ namespace CRUD_application_2.Controllers
     public class UserController : Controller
     {
         public static System.Collections.Generic.List<User> userlist = new System.Collections.Generic.List<User>();
-        // GET: User
-        public ActionResult Index()
-        {
-            // Return the view with the list of users
-            return View(userlist);
 
+        public ActionResult Index(string searchString)
+        {
+            var users = from u in userlist
+                        select u;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(users.ToList());
         }
+
+     
  
         // GET: User/Details/5
         public ActionResult Details(int id)
