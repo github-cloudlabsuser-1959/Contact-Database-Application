@@ -1,48 +1,18 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "subscriptionId": {
-      "value": "070d33e8-8573-45a0-b74b-6a96e9b4e64b"
-    },
     "resourceGroupName": {
-      "value": "GitHub-Copilot-Challenges"
-    },
-    "name": {
-      "value": "ContactDatabaseApp-1381390"
+        "value": "GitHub-Copilot-Challenges"
+      },
+      "subscriptionId": {
+        "value":  "d9d175f7-9888-472e-9013-2ede6f9029c0"
+      },
+    "webAppName": {
+      "value": "MyContactDatabaseApp"
     },
     "location": {
-      "value": "West US"
-    },
-    "hostingPlanName": {
-      "value": "ASP-GitHubCopilotChallenges-8f7c"
-    },
-    "serverFarmResourceGroup": {
-      "value": "GitHub-Copilot-Challenges"
-    },
-    "alwaysOn": {
-      "value": false
-    },
-    "ftpsState": {
-      "value": "FtpsOnly"
-    },
-    "sku": {
-      "value": "Free"
-    },
-    "skuCode": {
-      "value": "F1"
-    },
-    "numberOfWorkers": {
-      "value": "1"
-    },
-    "workerSize": {
-      "value": "0"
-    },
-    "workerSizeId": {
-      "value": "0"
-    },
-    "linuxFxVersion": {
-      "value": "DOTNETCORE|8.0"
+      "value": "East US"
     }
   }
 }
